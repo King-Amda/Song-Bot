@@ -9,10 +9,10 @@ from SDSongBot import LOGGER
 
 pm_start_text = """
 Hey [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
-😉 Just send me the song name you want to download.😋
-      eg:```/song Faded```
+ Just send me the song name you want to download
+      eg:```/song Nasuna```
       
-A bot by @SDBotsz 🇱🇰
+A bot by @ImSaantha
 """
 
 @app.on_message(filters.command("start"))
@@ -25,10 +25,10 @@ async def start(client, message):
             [
                 [
                      InlineKeyboardButton(
-                        text="Channel 🔊", url="https://t.me/SDbotsz"
+                        text="Repo", url="https://github.com/King-Amda/Song-Bot"
                     ),
                     InlineKeyboardButton(
-                        text="Dev 🔥", url="https://t.me/Darkridersslk"
+                        text="Dev 🔥", url="https://t.me/ImSaantha"
                     )
                 ]
             ]
@@ -39,5 +39,5 @@ async def start(client, message):
 
 
 app.start()
-LOGGER.info("✅ SDSongBot is online.")
+LOGGER.info("✅ Song Bot is online.")
 idle()
